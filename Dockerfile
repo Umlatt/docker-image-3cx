@@ -7,4 +7,4 @@ LABEL description="A custom 3cx pbx implementation for running on Jelastic platf
 # Ensure that build is running most up-to-date packages
 RUN apt-get update && apt-get upgrade -y && apt-get autoremove -y 
 
-CMD ["/usr/bin/wc","--help"]
+CMD ["/bin/bash"]
