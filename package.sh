@@ -1,5 +1,6 @@
 #!/bin/bash
-path=$1 version=$2
+version=$1
+path=$2 
 if [[ ! $path ]]; then path='.'; fi
 if [[ $version ]];
 then
