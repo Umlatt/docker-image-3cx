@@ -1,0 +1,2 @@
+#!/bin/bash
+printf '1\n' | /usr/sbin/3CXWizard --cleanup
