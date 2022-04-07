@@ -8,5 +8,5 @@ then
 else
     printf "Version number required.\ne.g.\t$0 1.0.2\n"
 fi
-docker run -dit --network host --name threecx.$version umlatt/3cx:$version
+docker run -dit --network host --tmpfs /run --tmpfs /run/lock --name threecx.$version umlatt/3cx:$version
 docker exec -it threecx.$version bash
